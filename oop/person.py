@@ -22,6 +22,7 @@ print(p1 == p2)  # p1.__eq__(p2)
 
 print(p1 > p2)  # p1.__gt__(p2)
 
-persons = [Person("A", 20), Person("B", 25), Person("C", 22)]
-for p in sorted(persons):
+persons = [Person("X", 20), Person("B", 25), Person("A", 22), Person("E", 21)]
+
+for p in sorted(persons, key=lambda p: p.name, reverse=True):
     print(p)
