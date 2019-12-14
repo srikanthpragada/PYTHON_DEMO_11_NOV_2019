@@ -1,0 +1,10 @@
+CREATE TABLE jobs (
+    id       INTEGER      PRIMARY KEY AUTOINCREMENT,
+    title    VARCHAR (30) NOT NULL,
+    location VARCHAR (20),
+    minsal   INTEGER      Check(minsal >= 5000)
+);
+
+
+insert into jobs(title,location,minsal)
+   values('Data Scientist','Chennai',50000)
